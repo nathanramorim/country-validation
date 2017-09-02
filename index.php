@@ -43,7 +43,7 @@ $validation = ($infos['country_name'] == 'country_name' || $infos['country_name'
 if($validation){
     $msg = ($infos['city'] != '') ? '<h1>Você é de '.$infos['city'].'</h1>' : '';
     echo $msg;
-    echo '<h2> Seu endereço de IP é de Moçambique</h2>';
+    echo '<h2> Seu endereço de IP está em '.$infos['country_name'].'</h2>';
 }else{
     $msg = ($infos['city'] != '') ? '<h1>Você é de '.$infos['city'].'</h1>' : '';
     echo $msg;
